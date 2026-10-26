@@ -4,7 +4,7 @@ Code for the manuscript **SG-Group: Semantic-Geometric Fusion for Robust 3D Gaus
 
 ![SG-Group method overview and example applications](abstract.png)
 
-SG-Group combines geometric overlap and semantic similarity to associate 2D instance masks across views. It compresses OpenCLIP features for storage with 3D Gaussians, then decodes them for semantic comparison during association. This repository contains preprocessing, association, grouping, rendering, and evaluation code. Datasets, pretrained weights, and experiment output files are not included.
+SG-Group combines geometric overlap and semantic similarity to associate 2D instance masks across views. It compresses OpenCLIP features for storage with 3D Gaussians, then decodes them for semantic comparison during association. This repository contains preprocessing, association, grouping, rendering, and evaluation code.
 
 ## Environment
 
@@ -25,7 +25,7 @@ The repository does not currently provide a version lockfile verified by a full 
 - [SAM ViT-H checkpoint](https://github.com/facebookresearch/segment-anything#model-checkpoints), saved at `weight/sam_vit_h_4b8939.pth` or another path supplied through `SAM_CHECKPOINT`.
 - [LAION OpenCLIP ViT-B-16 `laion2b_s34b_b88k` weights](https://huggingface.co/laion/CLIP-ViT-B-16-laion2B-s34B-b88K). `preprocess_semantic.py` requests this model through OpenCLIP and downloads it on first use if it is not already cached. No fixed `.pth` path is required or assumed by this code.
 
-Dataset download instructions are available for [LERF-Mask](https://github.com/lkeab/gaussian-grouping/blob/main/docs/dataset.md) and [Replica and ScanNet](https://github.com/weijielyu/Gaga/blob/main/USAGE.md#datasets). [MUSeg](https://doi.org/10.6084/m9.figshare.28749098) is also available, but its published RGB-D files are not a ready-to-run COLMAP scene for this pipeline. Prepare a scene in the COLMAP layout above before running SG-Group. Dataset files are not distributed here.
+Dataset download instructions are available for [LERF-Mask](https://github.com/lkeab/gaussian-grouping/blob/main/docs/dataset.md) and [Replica and ScanNet](https://github.com/weijielyu/Gaga/blob/main/USAGE.md#datasets). [MUSeg](https://doi.org/10.6084/m9.figshare.28749098) is also available, but its published RGB-D files are not a ready-to-run COLMAP scene for this pipeline. Prepare a scene in the COLMAP layout above before running SG-Group.
 
 ## Run SG-Group
 
