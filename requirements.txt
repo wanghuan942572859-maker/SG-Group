@@ -1,0 +1,11 @@
+numpy
+torchvision
+scipy
+Pillow
+opencv-python
+tqdm
+plyfile
+scikit-learn
+wandb
+open-clip-torch
+segment-anything

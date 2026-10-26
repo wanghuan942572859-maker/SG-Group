@@ -1,0 +1,31 @@
+# Datasets and generated results
+data/
+output/
+outputs/
+checkpoints/
+weight/*
+!weight/.gitkeep
+**/language_features/
+**/language_features_dim3/
+**/raw_sam_mask/
+**/sam_mask_semantic/
+
+# Model files and logs
+*.pth
+*.pt
+*.ckpt
+*.ply
+*.log
+wandb/
+
+# Python/CUDA build products
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+*.so
+*.pyd
+*.dll
+*.obj
+*.o
